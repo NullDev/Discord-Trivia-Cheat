@@ -1,0 +1,26 @@
+{
+	"name": "TriviaCheat",
+	"description": "A Discord Self-Bot to cheat at trivia",
+	"version": "0.1.0",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"discord.js": "^11.2.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NLDev/Discord-Trivia-Cheat"
+	},
+	"maintainers": [
+		{
+			"name": "NullDev",
+			"email": "admin@nulldev.org",
+			"web": "nulldev.org"
+		}
+	],
+	"license": "Apache-2.0",
+	"author": "NullDev",
+	"homepage": "https://nulldev.org"
+}
