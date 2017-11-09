@@ -57,8 +57,8 @@ The `config.json` is located [here](https://github.com/NLDev/Discord-Trivia-Chea
 You can **contribute** by adding questions to [this list](https://github.com/NLDev/Discord-Trivia-Cheat/blob/master/config.json).
 This can be accomplished by either filing an [issue](https://github.com/NLDev/Discord-Trivia-Cheat/issues) or by creating a [pull request](https://github.com/NLDev/Discord-Trivia-Cheat/pulls).
 
-## Disclaimber: :heavy_exclamation_mark:
+## Disclaimer: :heavy_exclamation_mark:
 
-It appears that discord doesn't really like Self-Bots. Apparently they have been sending warning emails to people using selfbots. I am not quite sure about that, but I would advice to keep an eye on your email just in case discord does send something to you. **I am not responsible for anything that happens with your Account!**
+It appears, that discord doesn't really like Self-Bots. Apparently they have been sending warning emails to people using them. I am not quite sure about that, but I would advice to keep an eye on your email just in case discord does send something to you. **I am not responsible for anything that happens to your Account!**
 
 You can read [Discord](https://discordapp.com/)'s full TOS [here](https://discordapp.com/terms).
