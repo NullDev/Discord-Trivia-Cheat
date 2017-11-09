@@ -1,6 +1,7 @@
 {
     "bot": {
-        "token": "-- CENSORED --"
+        "token": "-- CENSORED --",
+        "trivia_bot_username": "impulse"
     },
     "answers": {
         "What is the element symbol of \"Nickel\"": "ni",
