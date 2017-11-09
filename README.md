@@ -50,6 +50,8 @@ The `config.json` is located [here](https://github.com/NLDev/Discord-Trivia-Chea
 | trivia_bot_username | The username of the Trivia Bot. Default is [impulse](https://impulsebot.com/) |
 | answers | If you found a question the bot doesn't answer, you can add it here. |
 
+**Important:** _Never_ share your Discord token with anyone! 
+
 ## Contribute: :sparkles:
 
 You can **contribute** by adding questions to [this list](https://github.com/NLDev/Discord-Trivia-Cheat/blob/master/config.json).
