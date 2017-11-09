@@ -14,7 +14,7 @@ var jsondata = require('./config.json');
 var raw      = JSON.parse(jsondata);
 
 var token = raw.bot.token;
-var trbot = (raw.bot.trivia_bot_username).map(v => v.toLowerCase());
+var trbot = (raw.bot.trivia_bot_usernames).map(v => v.toLowerCase());
 
 if (!isset(token)){
     console.log("\nNo Token Provided.\n");
