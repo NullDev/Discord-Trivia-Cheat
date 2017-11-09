@@ -10,6 +10,22 @@ A Discord Self-Bot to cheat at trivia
 If the bot is started and configured properly, it will trigger once a specified trivia bot sends a question.
 Then it will send the answer over your account (Thats why it's called "Self-Bot").
 
+## Setup: :nut_and_bolt:
+
+0. Open up your favourite terminal (and navigate somewhere you want to download the repository to) <br><br>
+1. Make sure you have nodejs installed. Test by  entering <br>
+$ `node -v` <br>
+If this returns a version number, NodeJS is installed. **If not**, get NodeJS <a href="https://nodejs.org/en/download/package-manager/">here</a>. <br><br>
+2. Clone the repository and navigate to it. If you have Git installed, type <br>
+$ `git clone https://github.com/NLDev/Discord-Trivia-Cheat.git && cd Discord-Trivia-Cheat` <br>
+If not, download it <a href="https://github.com/NLDev/Discord-Trivia-Cheat/archive/master.zip">here</a> and extract the ZIP file.<br>
+Then navigate to the folder.<br><br>
+3. Install all dependencies by typing <br>
+$ `npm install`<br><br>
+4. Now Configure the bot inside the `config.json` file [here](https://github.com/NLDev/Discord-Trivia-Cheat/blob/master/config.json). (See [Configuration](https://github.com/NLDev/Discord-Trivia-Cheat#configuration-wrench)) <br><br>
+5. Finally: Start the bot by typing <br>
+$ `npm start`
+
 ## Configuration: :wrench: 
 
 The `config.json` is located [here](https://github.com/NLDev/Discord-Trivia-Cheat/blob/master/config.json).
