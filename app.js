@@ -16,17 +16,19 @@ var jsondata = require('./config.json');
 var raw      = JSON.parse(jsondata);
 
 var token = raw.bot.token;
-var trbot = ((raw.bot.trivia_bot_username).replace(/\s/gi, "") == "" ? "impulse" : raw.bot.trivia_bot_username);
+var trbot = (raw.bot.trivia_bot_username).map(v => v.toLowerCase());
 
 if (!isset(token)){
     console.log("\nNo Token Provided.\n");
     process.exit(1);
 }
 
+function isTrivia(str) { return (trbot.indexOf(str) > -1 ? true : false); }
+
 function isset(obj){ return !!(obj && obj !== null && (typeof obj === 'string' && obj !== "")); }
 
 function messageHandle(msg){
-    if ((msg.author.username).toLowerCase() == trbot.toLowerCase()){
+    if (isTrivia((msg.author.username).toLowerCase())){
         var q = (msg.content).toLowerCase();
         var a = raw.answers;
 
