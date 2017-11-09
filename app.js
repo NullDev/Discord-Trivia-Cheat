@@ -9,8 +9,6 @@ var fs      = require("fs");
 //----------------------------//
 ////////////////////////////////
 
-var noop = () => {};
-
 require.extensions['.json'] = function (module, filename) { module.exports = fs.readFileSync(filename, "utf8"); };
 var jsondata = require('./config.json');
 var raw      = JSON.parse(jsondata);
