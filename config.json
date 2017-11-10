@@ -1,7 +1,8 @@
 {
     "bot": {
         "token": "-- CENSORED --",
-        "trivia_bot_usernames": ["impulse"]
+        "trivia_bot_usernames": ["impulse"],
+        "realistic_mode": false
     },
     "answers": {
 
