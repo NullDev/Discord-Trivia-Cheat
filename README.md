@@ -32,7 +32,7 @@ $ `npm start`
 ## Demo 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/demo.gif" /><br>
+<img src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/demo-1.gif" /><br>
 </p>
 
 ## Configuration: :wrench: 
