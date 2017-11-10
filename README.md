@@ -1,7 +1,7 @@
 # Discord Trivia Cheat
 
 <p align="center">
-<img height="150" width="auto" src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/icon.png" /><br>
+<img height="150" width="auto" src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/icon.png" /><br>
 A Discord Self-Bot to cheat at trivia
 </p>
 
