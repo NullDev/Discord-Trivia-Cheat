@@ -26,6 +26,12 @@ $ `npm install`<br><br>
 5. Finally: Start the bot by typing <br>
 $ `npm start`
 
+## Demo 
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/demo.gif" /><br>
+</p>
+
 ## Configuration: :wrench: 
 
 The `config.json` is located [here](https://github.com/NLDev/Discord-Trivia-Cheat/blob/master/config.json).
