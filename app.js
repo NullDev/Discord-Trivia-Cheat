@@ -34,8 +34,6 @@ function messageHandle(msg){
         var keydelays = raw.bot.time_between_keystrokes;
         var readspeed = raw.bot.average_reading_speed;
 
-        console.log("real: " + realistic);
-
         for (var key in a){
             var exp = new RegExp(escapeRegEx(key), "gi");
             if (a.hasOwnProperty(key)) if (q.match(exp)) realistic ? delayMsg(a[key], keydelays, readspeed, msg) : msg.reply(a[key]);
