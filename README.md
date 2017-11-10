@@ -10,6 +10,9 @@ A Discord Self-Bot to cheat at trivia
 If the bot is started and configured properly, it will trigger once a specified trivia bot sends a question.
 Then it will send the answer over your account (Thats why it's called "Self-Bot").
 
+**Info:** It also comes with a "realistic mode" which prevents the bot from answering instantly. <br>
+This is possible by calculating the average typing speed by the length of the reply and the average reading speed by the length of the question..
+
 ## Setup: :nut_and_bolt:
 
 0. Open up your favourite terminal (and navigate somewhere you want to download the repository to) <br><br>
