@@ -32,10 +32,13 @@ function messageHandle(msg){
 
         var realistic = raw.bot.realistic_mode;
         var keydelays = raw.bot.time_between_keystrokes;
+        var readspeed = raw.bot.average_reading_speed;
+
+        console.log("real: " + realistic);
 
         for (var key in a){
             var exp = new RegExp(escapeRegEx(key), "gi");
-            if (a.hasOwnProperty(key)) if (q.match(exp)) realistic ? delayMsg(a[key], keydelays, msg) : msg.reply(a[key]);
+            if (a.hasOwnProperty(key)) if (q.match(exp)) realistic ? delayMsg(a[key], keydelays, readspeed, msg) : msg.reply(a[key]);
         }
     }
     else return;
@@ -43,9 +46,12 @@ function messageHandle(msg){
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
-async function delayMsg(txt, ms, msg){
-    var n = txt.length;
-    var t = n * ms;
+async function delayMsg(txt, ms, read, msg){
+    var n1 = txt.length;
+    var t1 = n1 * ms;
+    var n2 = (msg.content).length;
+    var t2 = n2 * read;
+    var t  = t1 + t2;
     await sleep(t);
     msg.reply(txt);
 }
