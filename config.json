@@ -3,7 +3,8 @@
         "token": "-- CENSORED --",
         "trivia_bot_usernames": ["impulse"],
         "realistic_mode": false,
-        "time_between_keystrokes": 300
+        "time_between_keystrokes": 300,
+        "average_reading_speed": 10
     },
     "answers": {
 
