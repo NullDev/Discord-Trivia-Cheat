@@ -31,8 +31,14 @@ $ `npm start`
 
 ## Demo 
 
+**Instant Mode** (`"realistic_mode": false`)
 <p align="center">
 <img src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/demo-1.gif" /><br>
+</p>
+
+**Realistic Mode** (`"realistic_mode": true`)
+<p align="center">
+<img src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/demo-2.gif" /><br>
 </p>
 
 ## Configuration: :wrench: 
