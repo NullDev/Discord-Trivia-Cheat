@@ -30,12 +30,24 @@ function messageHandle(msg){
         var q = (msg.content).toLowerCase();
         var a = raw.answers;
 
+        var realistic = raw.bot.realistic_mode;
+        var keydelays = raw.bot.time_between_keystrokes;
+
         for (var key in a){
             var exp = new RegExp(escapeRegEx(key), "gi");
-            if (a.hasOwnProperty(key)) if (q.match(exp)) msg.reply(a[key]);
+            if (a.hasOwnProperty(key)) if (q.match(exp)) realistic ? delayMsg(a[key], keydelays, msg) : msg.reply(a[key]);
         }
     }
     else return;
+}
+
+function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+
+async function delayMsg(txt, ms, msg){
+    var n = txt.length;
+    var t = n * ms;
+    await sleep(t);
+    msg.reply(txt);
 }
 
 function escapeRegEx(str) { return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&"); }
