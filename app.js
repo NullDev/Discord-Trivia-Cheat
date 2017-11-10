@@ -21,12 +21,22 @@ if (!isset(token)){
     process.exit(1);
 }
 
+console.log(
+    "\n\n"          +
+    "###########\n" +
+    "#---------#\n" +
+    "# STARTED #\n" +
+    "#---------#\n" +
+    "###########\n"
+);
+
 function isTrivia(str) { return (trbot.indexOf(str) > -1 ? true : false); }
 
 function isset(obj){ return !!(obj && obj !== null && (typeof obj === 'string' && obj !== "")); }
 
 function messageHandle(msg){
     if (isTrivia((msg.author.username).toLowerCase())){
+
         var q = (msg.content).toLowerCase();
         var a = raw.answers;
 
@@ -36,7 +46,12 @@ function messageHandle(msg){
 
         for (var key in a){
             var exp = new RegExp(escapeRegEx(key), "gi");
-            if (a.hasOwnProperty(key)) if (q.match(exp)) realistic ? delayMsg(a[key], keydelays, readspeed, msg) : msg.reply(a[key]);
+            if (a.hasOwnProperty(key)){ 
+                if (q.match(exp)) {
+                    console.log("> Got Question");
+                    realistic ? delayMsg(a[key], keydelays, readspeed, msg) : send(msg, a[key]);
+                }
+            }
         }
     }
     else return;
@@ -51,7 +66,12 @@ async function delayMsg(txt, ms, read, msg){
     var t2 = n2 * read;
     var t  = t1 + t2;
     await sleep(t);
-    msg.reply(txt);
+    send(msg, txt);
+}
+
+function send(msg, txt){ 
+    console.log(">> Sent Answer\n");
+    msg.reply(txt); 
 }
 
 function escapeRegEx(str) { return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&"); }
