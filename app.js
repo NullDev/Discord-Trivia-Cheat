@@ -29,6 +29,7 @@ console.log(
     "#---------#\n" +
     "###########\n"
 );
+console.log("Logging in...");
 
 function isTrivia(str) { return (trbot.indexOf(str) > -1 ? true : false); }
 
@@ -80,7 +81,7 @@ var client = new class Client extends Discord.Client {
     constructor() {
         super({ fetchAllMembers: true });
 
-        this.on("ready", () => { console.log(`Logged in as ${client.user.tag}!`) });
+        this.on("ready", () => { console.log(`Logged in as ${client.user.tag}\n`) });
         this.on("message", message => { messageHandle(message); });
 
         this.login(token);
