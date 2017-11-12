@@ -18,6 +18,7 @@ This is possible by calculating the average typing speed by the length of the re
 - General 
 - Anime
 - Harry Potter
+- Games
 
 ## Setup: :nut_and_bolt:
 
