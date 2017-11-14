@@ -11,7 +11,8 @@ If the bot is started and configured properly, it will trigger once a specified 
 Then it will send the answer over your account (Thats why it's called "Self-Bot").
 
 **Info:** It also comes with a "realistic mode" which prevents the bot from answering instantly. <br>
-This is possible by calculating the average typing speed by the length of the reply and the average reading speed by the length of the question..
+This is possible by calculating the average typing speed by the length of the reply and the average reading speed by the length of the question. <br>
+The bot features a "stealth mode" as well which shows the answer to Trivia Questions in your Terminal only!
 
 **Supported Categories:**
 
@@ -58,6 +59,7 @@ The `config.json` is located [here](https://github.com/NLDev/Discord-Trivia-Chea
         "token": "--CENSORED --",
         "trivia_bot_usernames": ["impulse"],
         "realistic_mode": false,
+        "stealth_mode": false,
         "time_between_keystrokes": 300,
         "average_reading_speed": 10
     },
@@ -74,6 +76,7 @@ The `config.json` is located [here](https://github.com/NLDev/Discord-Trivia-Chea
 | token | Your user token. To see how to get this token check [this](https://github.com/TheRacingLion/Discord-SelfBot/wiki/Discord-Token-Tutorial) out. |
 | trivia_bot_usernames | The usernames of the Trivia Bot. Default is [impulse](https://impulsebot.com/). <br>Multiple can be added like this: <br> `["Bot_1", "Bot_2", "Bot_3", "..."]` |
 | realistic_mode | Either `true` or `false`. If this is set to `true`, the bot will answer with delay, based on how long the answer is. This will make it look realistic. If it's set to `false` the bot will answer instantly. |
+| stealth_mode | Either `true` or `false`. If this is set to `true`, the bot will show you the answer in the **terminal only**. You have to type it yourself. This overrides `realistic_mode` | 
 | time_between_keystrokes | The time in milliseconds between keystrokes. <br> **Note:** Only used if `realistic_mode` above is set to `true`! |
 | average_reading_speed | The average reading time for characters in the question. <br> **Note:** Only used if `realistic_mode` above is set to `true`! |
 | answers | If you found a question the bot doesn't answer, you can add it here. |
