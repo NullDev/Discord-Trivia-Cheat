@@ -42,6 +42,7 @@ function messageHandle(msg){
         var a = raw.answers;
 
         var realistic = raw.bot.realistic_mode;
+        var stealthmd = raw.bot.stealth_mode;
         var keydelays = raw.bot.time_between_keystrokes;
         var readspeed = raw.bot.average_reading_speed;
 
@@ -50,7 +51,7 @@ function messageHandle(msg){
             if (a.hasOwnProperty(key)){ 
                 if (q.match(exp)) {
                     console.log("> Got Question");
-                    realistic ? delayMsg(a[key], keydelays, readspeed, msg) : send(msg, a[key]);
+                    (realistic && !stealthmd) ? delayMsg(a[key], keydelays, readspeed, msg) : send(msg, a[key]);
                 }
             }
         }
