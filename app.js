@@ -70,11 +70,6 @@ async function delayMsg(txt, ms, read, msg){
     send(msg, txt);
 }
 
-function send(msg, txt){ 
-    console.log(">> Sent Answer\n");
-    msg.reply(txt); 
-}
-
 function escapeRegEx(str) { return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&"); }
 
 var client = new class Client extends Discord.Client {
@@ -85,6 +80,14 @@ var client = new class Client extends Discord.Client {
         this.on("message", message => { messageHandle(message); });
 
         this.login(token);
+    }
+}
+
+function send(msg, txt){ 
+    if (raw.bot.stealth_mode) console.log(">> ANSWER: " + txt + "\n");
+    else {
+        console.log(">> Sent Answer\n");
+        msg.reply(txt);
     }
 }
 
