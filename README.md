@@ -64,7 +64,7 @@ The `config.json` is located [here](https://github.com/NLDev/Discord-Trivia-Chea
         "token": "-- CENSORED --",
         "trivia_bot_usernames": ["impulse"],
         "realistic_mode": false,
-        "stealth_mode": false,
+        "stealth_mode": true,
         "time_between_keystrokes": 300,
         "average_reading_speed": 10
     },
