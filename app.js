@@ -3,12 +3,6 @@
 var Discord = require("discord.js");
 var fs      = require("fs");
 
-////////////////////////////////
-//----------------------------//
-// Copyright (c) 2017 NullDev //
-//----------------------------//
-////////////////////////////////
-
 require.extensions['.json'] = function (module, filename) { module.exports = fs.readFileSync(filename, "utf8"); };
 var jsondata = require('./config.json');
 var raw      = JSON.parse(jsondata);
@@ -17,17 +11,12 @@ var token = raw.bot.token;
 var trbot = (raw.bot.trivia_bot_usernames).map(v => v.toLowerCase());
 
 if (!isset(token)){
-    console.log("\nNo Token Provided.\n");
+    console.log("\nNo token was provided, unable to login.\n");
     process.exit(1);
 }
 
 console.log(
-    "\n\n"          +
-    "###########\n" +
-    "#---------#\n" +
-    "# STARTED #\n" +
-    "#---------#\n" +
-    "###########\n"
+    "Starting application."
 );
 console.log("Logging in...");
 
@@ -93,3 +82,4 @@ function send(msg, txt){
 }
 
 process.on('unhandledRejection', err => console.error(`Uncaught Promise Rejection\n${err}`))
+// Copyright (c) 2017 NullDev
