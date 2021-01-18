@@ -1,7 +1,7 @@
 # Discord Trivia Cheat
 
 <p align="center">
-<img height="150" width="auto" src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/icon.png" /><br>
+<img height="150" width="auto" src="https://raw.githubusercontent.com/NullDev/Discord-Trivia-Cheat/master/.src/icon.png" /><br>
 A Discord Self-Bot to cheat at trivia
 </p>
 
@@ -28,12 +28,12 @@ The bot features a "stealth mode" as well which shows the answer to Trivia Quest
 $ `node -v` <br>
 If this returns a version number, NodeJS is installed. **If not**, get NodeJS <a href="https://nodejs.org/en/download/package-manager/">here</a>. <br><br>
 2. Clone the repository and navigate to it. If you have Git installed, type <br>
-$ `git clone https://github.com/NLDev/Discord-Trivia-Cheat.git && cd Discord-Trivia-Cheat` <br>
-If not, download it <a href="https://github.com/NLDev/Discord-Trivia-Cheat/archive/master.zip">here</a> and extract the ZIP file.<br>
+$ `git clone https://github.com/NullDev/Discord-Trivia-Cheat.git && cd Discord-Trivia-Cheat` <br>
+If not, download it <a href="https://github.com/NullDev/Discord-Trivia-Cheat/archive/master.zip">here</a> and extract the ZIP file.<br>
 Then navigate to the folder.<br><br>
 3. Install all dependencies by typing <br>
 $ `npm install`<br><br>
-4. Now Configure the bot inside the `config.json` file [here](https://github.com/NLDev/Discord-Trivia-Cheat/blob/master/config.json). (See [Configuration](https://github.com/NLDev/Discord-Trivia-Cheat#configuration-wrench)) <br><br>
+4. Now Configure the bot inside the `config.json` file [here](https://github.com/NullDev/Discord-Trivia-Cheat/blob/master/config.json). (See [Configuration](https://github.com/NullDev/Discord-Trivia-Cheat#configuration-wrench)) <br><br>
 5. Finally: Start the bot by typing <br>
 $ `npm start`
 
@@ -41,22 +41,22 @@ $ `npm start`
 
 **Instant Mode** (`"realistic_mode": false` & `"stealth_mode": false`)
 <p align="center">
-<img src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/demo-1.gif" /><br>
+<img src="https://raw.githubusercontent.com/NullDev/Discord-Trivia-Cheat/master/.src/demo-1.gif" /><br>
 </p>
 
 **Realistic Mode** (`"realistic_mode": true`)
 <p align="center">
-<img src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/demo-2.gif" /><br>
+<img src="https://raw.githubusercontent.com/NullDev/Discord-Trivia-Cheat/master/.src/demo-2.gif" /><br>
 </p>
 
 **Stealth Mode** (`"stealth_mode": true`)
 <p align="center">
-<img src="https://raw.githubusercontent.com/NLDev/Discord-Trivia-Cheat/master/.src/demo-3.gif" /><br>
+<img src="https://raw.githubusercontent.com/NullDev/Discord-Trivia-Cheat/master/.src/demo-3.gif" /><br>
 </p>
 
 ## Configuration: :wrench: 
 
-The `config.json` is located [here](https://github.com/NLDev/Discord-Trivia-Cheat/blob/master/config.json).
+The `config.json` is located [here](https://github.com/NullDev/Discord-Trivia-Cheat/blob/master/config.json).
 
 ```JSON
 {
@@ -90,8 +90,8 @@ The `config.json` is located [here](https://github.com/NLDev/Discord-Trivia-Chea
 
 ## Contribute: :sparkles:
 
-You can **contribute** by adding questions to [this list](https://github.com/NLDev/Discord-Trivia-Cheat/blob/master/config.json).
-This can be accomplished by either filing an [issue](https://github.com/NLDev/Discord-Trivia-Cheat/issues) or by creating a [pull request](https://github.com/NLDev/Discord-Trivia-Cheat/pulls).
+You can **contribute** by adding questions to [this list](https://github.com/NullDev/Discord-Trivia-Cheat/blob/master/config.json).
+This can be accomplished by either filing an [issue](https://github.com/NullDev/Discord-Trivia-Cheat/issues) or by creating a [pull request](https://github.com/NullDev/Discord-Trivia-Cheat/pulls).
 
 ## Disclaimer: :heavy_exclamation_mark:
 
