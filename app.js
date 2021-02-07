@@ -88,7 +88,10 @@ function send(msg, txt){
     if (raw.bot.stealth_mode) console.log(">> ANSWER: " + txt + "\n");
     else {
         console.log(">> Sent Answer\n");
-        msg.reply(txt);
+        if(msg.channel.type === "group")
+            msg.channel.send(txt);
+        else
+            msg.reply(txt);
     }
 }
 
