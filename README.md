@@ -5,6 +5,13 @@
 A Discord Self-Bot to cheat at trivia
 </p>
 
+<hr>
+
+# IMPORTANT:
+## This is not safe anymore because Discord has strictened its policy on self-bots!
+
+<hr>
+
 ## What does it do: :question:
 
 If the bot is started and configured properly, it will trigger once a specified trivia bot sends a question.
