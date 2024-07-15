@@ -83,6 +83,34 @@ The `config.json` is located [here](https://github.com/NullDev/Discord-Trivia-Ch
 }
 ```
 
+## How to get the token
+
+Open Discord Dev Tools Console and paste this:
+
+```js
+window.webpackChunkdiscord_app.push([
+  [Math.random()],
+  {},
+  req => {
+    if (!req.c) return;
+    for (const m of Object.keys(req.c)
+      .map(x => req.c[x].exports)
+      .filter(x => x)) {
+      if (m.default && m.default.getToken !== undefined) {
+        return copy(m.default.getToken());
+      }
+      if (m.getToken !== undefined) {
+        return copy(m.getToken());
+      }
+    }
+  },
+]);
+console.log('%cWorked!', 'font-size: 50px');
+console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
+```
+
+---
+
 | Keyword | Meaning |
 |---------|---------|
 | token | Your user token. To see how to get this token check [this](https://github.com/TheRacingLion/Discord-SelfBot/wiki/Discord-Token-Tutorial) out. |
