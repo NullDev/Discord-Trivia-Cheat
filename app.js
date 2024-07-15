@@ -1,6 +1,6 @@
 "use strict";
 
-var Discord = require("discord.js");
+var Discord = require("discord.js-selfbot-v13");
 var fs      = require("fs");
 
 ////////////////////////////////
@@ -73,16 +73,14 @@ async function delayMsg(txt, ms, read, msg){
 
 function escapeRegEx(str) { return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&"); }
 
-var client = new class Client extends Discord.Client {
-    constructor() {
-        super({ fetchAllMembers: true });
+const client = new Discord.Client();
 
-        this.on("ready", () => { console.log(`Logged in as ${client.user.tag}\n`) });
-        this.on("message", message => { messageHandle(message); });
+client.on("ready", () => { console.log(`Logged in as ${client.user.tag}\n`); });
+client.on("messageCreate", message => { messageHandle(message); });
 
-        this.login(token);
-    }
-}
+client.login(token)
+    .then(() => console.log("Logged in!"))
+    .catch(err => console.log("Failed to login: ", err));
 
 function send(msg, txt){ 
     if (raw.bot.stealth_mode) console.log(">> ANSWER: " + txt + "\n");
@@ -92,4 +90,4 @@ function send(msg, txt){
     }
 }
 
-process.on('unhandledRejection', err => console.error(`Uncaught Promise Rejection\n${err}`))
+process.on('unhandledRejection', err => console.error(`Uncaught Promise Rejection\n${err}`));
