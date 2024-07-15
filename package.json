@@ -7,7 +7,7 @@
 		"start": "node app.js"
 	},
 	"dependencies": {
-		"discord.js": "^11.2.1"
+		"discord.js-selfbot-v13": "^3.2.2"
 	},
 	"repository": {
 		"type": "git",
